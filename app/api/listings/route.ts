@@ -9,7 +9,6 @@ export async function POST(request: Request) {
   if (!currentUser) {
     return NextResponse.error();
   }
-  // todo 4:48:#2
 
   const body = await request.json();
   const {
